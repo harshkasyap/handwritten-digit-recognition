@@ -28,7 +28,7 @@ print(x_train.shape[0], 'train samples')
 print(x_test.shape, 'test samples')
 
 
-""" # Create the model
+# Create the model
 batch_size = 128
 epochs = 10
 
@@ -47,7 +47,7 @@ model.compile(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimiz
 hist = model.fit(x_train, y_train,batch_size=batch_size,epochs=epochs,verbose=1,validation_data=(x_test, y_test))
 print("The model has successfully trained")
 model.save('mnist.h5')
-print("Saving the model as mnist.h5") """
+print("Saving the model as mnist.h5")
 
 model = load_model('mnist.h5')
 
